@@ -1,0 +1,192 @@
+<!-- Please Read:
+     There are 6 total pages for this site, when you edit this page you will only be making changes
+     to this single index file, however you can navigate to all the pages from a users point of view
+     from just the index page.
+
+     To make changes to the other pages ie:
+
+     music.html
+     merch.html
+     tour.html
+     contact.html
+     about.html
+
+     you will have to open them individually and make the changes manually
+
+     so when tour dated come up or merch is to be added we can simply adjust the pages accordingly
+
+     note: comments in HTML are after <!-- and greyed out
+           comments in CSS (style) are in between /*   */ 
+
+     note: when a file hasnt been saved yet it will have a dot by it
+
+     end comment block
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    
+<!-- this is what it typed at the top of the screen, like the tab at the top -->   
+<title> Rochester's Web Site</title>
+    
+<style>
+/*  -this is the formatting for the navigation menu
+    -you can change the font here, however youll have to change it in both the 
+    -above (in the URL) and below in the "font-family field"
+    
+    -you can check out more fonts here:
+    https://www.w3schools.com/howto/howto_google_fonts.asp
+    
+    changing the font here will only change it on this page and only the menu text
+    */
+    
+a{
+  width: 100%;
+  height: 100vh;
+  margin: 15;
+  font-family: 'Roboto Condensed';
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;    
+    }
+    
+a:hover {
+    text-decoration: line-through;
+  color: white;
+}
+
+/* this is the menu container, do not touch */    
+
+.container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 600px;
+}    
+
+ul {
+  color: azure;
+  list-style-type: none;
+  margin: 100;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;  
+  margin-left: -25%;
+  margin-right: -10%;
+  word-spacing: 25px;
+}
+
+li {
+  display: inline;
+padding: 0px;
+}
+
+/* this is the over all formatting for the main body block */    
+
+body  {
+     background-color: black;
+     margin-left: 35%;
+     margin-right: 50%;
+     width: 50%;
+    }   
+
+/* this is where you can adjust the timing to the fade in
+   try to use 5s increments, ie 5s, 10s, or 15s */
+
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+
+/* do not touch this, its the fade in function specifics */
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+
+</style>
+</head>
+<body>
+
+<!-- these are basically pressing "enter" to add space to the top -->
+    
+<br><br><br><br><br><br><br>
+
+<!-- start fade in block -->
+    
+<div class="fade-in">
+
+<!-- pic inserterd here, chage "pic2.png to whatever the new file is -->
+    
+<img class="img-responsive" src="pic2.png" alt="Rochester" >
+        
+<br><br><br><br><br><br> 
+        
+<div class="fade-in">
+<div class="container">
+    
+<!-- this is the actual menu text -->
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="music.html">Music</a></li>
+  <li><a href="merch.html">Merch</a></li>
+  <li><a href="tour.html">Tour</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+        </div>       
+                  </div>
+                           </div>
+    
+<!-- end fade in block --> 
+    
+</body>
+</html>
